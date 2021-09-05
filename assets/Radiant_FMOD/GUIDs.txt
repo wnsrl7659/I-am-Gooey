@@ -1,0 +1,57 @@
+{4a844055-4922-45bb-852b-393a81b4141a} event:/Music/Credits/Credits_Track
+{a25d0b15-4181-41e4-a9f3-1f6509224935} event:/Music/FinalScene/FinaleScene
+{af85541e-5775-45f9-a7bb-0c9e8690cefa} event:/Music/Level_1/Level_1
+{22be3760-95d8-4bea-80c4-58a0775d711f} event:/Music/Level_2/Level_2
+{23a4050c-b7bc-4144-9d04-ff5e628fa3d7} event:/Music/Level_3/Level_3
+{8cbc8037-75a1-43c7-a04c-2e2cd3f8e96e} event:/Music/Level_4/Ambient_Wind
+{abf16b8e-dbb7-4abb-a8bd-c73745ae9d48} event:/Music/Main Menu/Main_Menu
+{f30a443b-c4b9-436d-bd94-689a81540d85} event:/SFX/General_SFX/Musical_SFX/Brazier_Conditional
+{86ff69a4-c6c0-4ebf-ab0d-b182166b43cc} event:/SFX/General_SFX/Musical_SFX/Hint_PickUp
+{dba6bf7d-490b-49ad-9c11-cc5e967dcffc} event:/SFX/General_SFX/Brazier
+{4eaed3e0-2c20-455e-97a1-913ccbb2e1a7} event:/SFX/Player/Collision
+{d2415046-f1bc-4ff0-be36-04810b321453} event:/SFX/Player/Fire_Emitter
+{e4a60a67-0d10-4c50-b270-5e8276729536} event:/SFX/Player/Moving
+{4aa97cc1-db77-479a-9874-c667d83d1a7b} event:/SFX/Stinger/Final_Flame
+{be175950-ee3c-4b04-867a-bd12d892aa70} event:/SFX/Stinger/Logo
+{e1662279-2106-4f30-9d91-1b9fdf32662a} event:/SFX/Stinger/Puzzle_Finish
+{6a6a5c86-2ada-429f-83cf-088e685f9779} event:/SFX/Stinger/Transition
+{1fbb7112-f16c-40a8-bbcd-c7c67d14b9aa} event:/SFX/UI/Menu_Clicks
+{023c179b-6573-4b5f-a999-a74341f58657} event:/Unused/Ambience/Ambience
+{44ab29fb-70b6-46f0-8430-f635c24b3da6} event:/Unused/General_SFX/SFX_Footsteps
+{9b8c3675-b866-4faf-9c79-86ecb4c1b673} event:/Unused/General_SFX/SFX_LuteNotes
+{65dd1e1b-afb7-4f12-8d2d-36b9c4bbf26e} event:/Unused/Level 1/Music_Field_1
+{4ddd07e3-a640-4989-a2bf-c66f6c4364a9} event:/Unused/Level 2/Second Branch/Second Branch 1
+{b5c4326b-fa4d-4ead-9150-40a85d890807} event:/Unused/Level 2/Second Branch/Second Branch 2
+{977eef91-1140-453a-9276-cf6663608e7f} event:/Unused/Level 2/Third Branch/Third Branch 1
+{7b5f7605-f72f-42a0-a4c3-d1d4b72b25d1} event:/Unused/Level 2/Third Branch/Third branch 2
+{15b02606-4b50-4dbd-8643-8558f8683022} event:/Unused/Level 2/Music_Field_2
+{03c0dd7a-8728-4f69-b802-e89ee2a51f15} event:/Unused/UI/SFX_Buttons
+{21a394c0-f1cf-4fe6-98c3-aa12fae34666} event:/Unused/UI/SFX_QuitMenu
+{83a71948-bea8-4fa4-a95c-be460240b294} event:/Unused/Hint_Use
+{b32001d8-a0a4-41b0-9de2-eff2d681152c} bus:/
+{9d63a38a-8863-434a-82ba-fae0a4ca31d7} bus:/Ambience
+{1c4078c1-23e8-477f-9739-e536d11acd1e} bus:/Music
+{be9b3f21-fe38-4193-9afd-cacb4ed80fd1} bus:/SFX
+{98dc625f-e536-4ff5-ae61-235800595556} bus:/SFX/General SFX
+{3fede398-b65c-4103-a823-37cd7c49ddf8} bus:/SFX/General SFX/Musical SFX
+{73d470f1-5056-4451-a332-05c72264625b} bus:/SFX/Player
+{1fff5e41-3843-4571-8c80-49edfe5bebcc} bus:/SFX/Stingers
+{cf193f46-c9c5-47be-96b1-65b14b480c27} bus:/SFX/UI
+{86f2951c-8868-47fb-ad35-418a7da4f004} bus:/Unused
+{0857d7e0-0058-41c0-984e-f4b53631db03} vca:/Ambience
+{042febf1-5b41-4098-adaf-53f4519e586e} vca:/Music
+{e37ec3bd-b08d-4260-baff-6344495b2c05} vca:/SFX
+{25f0cd82-0b85-4380-81e9-7b6a1c9b013d} snapshot:/Pause
+{7bc75b6e-3481-40a0-b7c5-6f3e24428fcd} snapshot:/UnPause
+{bcbc432f-7567-4ce5-9254-7d6d34f753a5} bank:/Master Bank
+{01f9114b-4b97-4a9b-b5c2-46e4884b569e} bank:/Credits
+{07c71c53-c1d3-4253-9305-2ba755fffbab} bank:/FinalScene
+{5a24b47e-c518-4bf5-8d26-9528c2944fc7} bank:/Level_1
+{99b7311b-4585-408f-a061-294f4788c9ff} bank:/Level_2
+{195e049c-d3cb-4c94-8b89-68dc22762ca8} bank:/Level_3
+{86eb786b-9551-4826-8090-2ca6818dfae6} bank:/Level_4
+{af1145fc-93a1-4d82-898b-ac578e537443} bank:/Main_Menu
+{ad4a94d5-38a5-4fe9-b227-0b95d19f25e7} bank:/General
+{f3644775-5d66-4097-9b67-82d9d2258669} bank:/Player
+{3e663fb7-0de5-47a5-8327-6d9dfb3a7cb4} bank:/Stingers
+{aa6db336-0572-4e1a-b182-02be162e30b8} bank:/UI

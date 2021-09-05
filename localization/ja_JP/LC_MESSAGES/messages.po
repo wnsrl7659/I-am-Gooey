@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 10:48-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: RYAN HANSON ryan.hanson@digipen.edu\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: TrueType.cpp:297
+msgid "Play"
+msgstr "はじめる"
+
+#: TrueType.cpp:298
+msgid "Options"
+msgstr "コンフィガ"
+
+#: TrueType.cpp:299
+msgid "Credits"
+msgstr "エンドロール"
+
+#: TrueType.cpp:300
+msgid "Quit"
+msgstr "やめる"
+
+msgid "Resume"
+msgstr "レジューム"
+
+msgid "Menu"
+msgstr "メニュー"
+
+#Translation: Instructions
+msgid "How to Play"
+msgstr "説明書"
+
+msgid "Master Volume"
+msgstr "マスター音量"
+
+msgid "Music Volume"
+msgstr "音楽音量"
+
+msgid "SFX Volume"
+msgstr "効果音音量"
+
+msgid "Mute"
+msgstr "ミュート"
+
+msgid "Fullscreen"
+msgstr "フルスクリーン"
+
+msgid "On"
+msgstr "はい"
+
+msgid "Off"
+msgstr "いいえ"
+
+msgid "Back"
+msgstr "帰る"
+
+msgid "WASD to Move"
+msgstr "WASDが歩く"
+
+msgid "Make a loop"
+msgstr "ループをする"
+
+msgid "Magenta: Turn  |  Cyan: Forward"
+msgstr "ピンク：　曲がる　｜青：　前"
+
+#Translation: Collect coins
+msgid "Collect the secret coins"
+msgstr "秘密のお金をGETする"
+
+msgid "Are you sure?"
+msgstr "本当に"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Japanese"
+msgstr "日本語"

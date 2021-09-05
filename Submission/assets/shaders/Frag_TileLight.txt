@@ -1,0 +1,209 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec3 v_Color;
+in vec2 v_TexCoord;
+
+// texture sampler
+uniform sampler2D texture_color;
+uniform sampler2D texture_normal;
+uniform float image_alpha;
+
+//Light Uniforms
+in vec3 v_World;
+
+uniform int isWall;
+uniform float TileZ;
+uniform int validLights;
+uniform float real_color[9]; //Colormap's real colors
+uniform vec3 LightColor[50]; //RGB
+uniform vec4 LightData[50];  //XYZ,Radius(w)
+
+uniform int validWalls;
+uniform vec4 LightWalls[50]; //XY, XY(zw)
+uniform vec2 LightWallNorms[50]; //XY
+
+uniform int doLava;
+uniform float timer;
+
+//Checks the orientation between 3 points
+//first two are from on line segment, the third is from another
+//returns the orientation, aka clockwise, counterclockwise, or colinear
+int getOrientation(vec2 seg1point1, vec2 seg1point2, vec2 seg2) 
+{  
+    float val = (seg1point2.y - seg1point1.y) * (seg2.x - seg1point2.x) - 
+              (seg1point2.x - seg1point1.x) * (seg2.y - seg1point2.y); 
+  
+    if (val == 0) return 0;  // colinear 
+  
+    return (val > 0)? 1: 2; // clock or counterclock wise 
+} 
+
+void main()
+{
+	vec4 TexColor = texture(texture_color, v_TexCoord);
+  vec4 TexNormal = texture(texture_normal, v_TexCoord);
+
+  //Loop for each light source
+  //Default values for total red, green and blue determine "global light"
+  float tR = 0, tG = 0, tB = 0;
+  for(int i = 0; i < validLights; i++)
+  {
+    float xDiff = (LightData[i].x - v_World.x);
+    float yDiff = (LightData[i].y - v_World.y);
+    float zDiff = (LightData[i].z - v_World.z);
+  
+    //Normalized vector in direction from frag to light
+    vec3 distNormal = normalize(vec3(xDiff, yDiff, zDiff));
+    
+    xDiff *= xDiff;
+    yDiff *= yDiff * 2; //y elipses with the *2
+    zDiff *= zDiff;
+    
+    bool WallBlocked = false;
+    for(int j = 0; j < validWalls; j++)
+    {
+      //if(dot(distNormal.xy, LightWallNorms[j]) < 0)
+      //  continue;
+      
+      vec2 wallDist = ((LightData[i].xy - LightWalls[j].xy));
+      
+      if(dot(wallDist,wallDist) > LightData[i].w*LightData[i].w)
+        continue;
+      
+      //Check for orientation between the walls and the fragment & light
+      int orientation1 = getOrientation(LightWalls[j].xy, LightWalls[j].zw, v_World.xy);
+      int orientation2 = getOrientation(LightWalls[j].xy, LightWalls[j].zw, LightData[i].xy);
+      int orientation3 = getOrientation(v_World.xy, LightData[i].xy, LightWalls[j].xy);
+      int orientation4 = getOrientation(v_World.xy, LightData[i].xy, LightWalls[j].zw);
+      
+      //If theres different orientations between the points
+      if((orientation1 != orientation2) && (orientation3 != orientation4))
+      {
+        WallBlocked = true;
+        break; //break out of for loop
+      }
+    }
+    
+    float distSquared = (xDiff + yDiff + zDiff);
+    float radSquared = (LightData[i].w * LightData[i].w);
+    
+    distSquared /= radSquared;
+    
+    //DistSquared: 0 to large numbers
+
+    if(distSquared > 1.0)
+      continue;
+    
+    //DistSquared: 0 to 1, 1 being the outer radius
+    
+    /*
+    //Makes ring around outer radius
+    if(abs(distSquared - 1.0) < .03)
+    {
+      tR += -1.0;
+      tG += 1.0;
+      tB += -1.0;
+      continue;
+    }
+    /**/
+    
+    //DistSquared: base to max
+    float base = 0.5;
+    float max = 100.0;
+    distSquared = (distSquared * distSquared * distSquared * max) + base;
+    
+    if(WallBlocked)
+      distSquared*=2;
+   
+    //distSquared *= distSquared;
+    
+    /*
+    float gloss = 0.5;
+    if(distSquared <= gloss)
+        distSquared = gloss;
+    if(distSquared >= gloss) //outside main spotlight
+       distSquared *= (distSquared - gloss) + 1.0;
+    /**/      
+       
+    //find Normal Map ratio:
+    //TexNormal rgb ranges from 0 to 1
+    //TexNormal should map from -1 to 1, to be a normal vector
+    //distNormal is already normalized and has correct direction
+    
+    vec3 VecTexNormal = vec3(TexNormal.x * 2.0 - 1.0, TexNormal.y * 2.0 - 1.0, TexNormal.z * 2.0 - 1.0);
+    
+    if(isWall != 0) //Walls have different normal coordinates
+      VecTexNormal = vec3(VecTexNormal.x, -VecTexNormal.z, VecTexNormal.y);
+    
+    float NormalAlignment = dot(distNormal, VecTexNormal) * TexNormal.a;
+    
+    if(NormalAlignment <= .1)//Minimum amount it can get darker
+      NormalAlignment = .1;
+       
+    if(TexNormal.a == 0)//No normal
+      NormalAlignment = 1.0; //default to full value
+       
+       
+    //Light's colors;
+    float red = LightColor[i].x, green = LightColor[i].y, blue = LightColor[i].z;
+    tR += red / distSquared  * NormalAlignment;  
+    tG += green / distSquared * NormalAlignment; 
+    tB += blue / distSquared * NormalAlignment;
+  }
+  //..End of lightsource loop
+  
+  //Set the default color to black
+  FragColor = vec4(0,0,0,TexColor.a * image_alpha);
+  
+  //Give the final color the real color of the tile multiplied 
+  //by the lights value, the divided by the distance for strength
+  //This will make red light only make objects with red value show red etc...
+  float total = TexColor.r + TexColor.g + TexColor.b;
+  if(TexColor.r == total)//If this pixel has all red value
+  {   
+      FragColor.r += real_color[0] * TexColor.r * tR;  
+      FragColor.g += real_color[1] * TexColor.r * tG; 
+      FragColor.b += real_color[2] * TexColor.r * tB; 
+  }
+  else if(TexColor.g == total)//If this pixel has all green value
+  {   
+      if(doLava == 1)
+      {
+        /*
+        FragColor.r += real_color[3] * TexColor.g * (tR * 0.6 + tG * 0.3 + tB * 0.3) * 0.7 + 0.5;  
+        FragColor.g += real_color[4] * TexColor.g * tG * 0.5; 
+        FragColor.b += real_color[5] * TexColor.g * tB * 0.5;  
+        */
+        FragColor.r += real_color[3] * TexColor.g * tR;  
+        FragColor.g += real_color[4] * TexColor.g * tG; 
+        FragColor.b += real_color[5] * TexColor.g * tB; 
+        
+        FragColor.r += (int(v_World.x * v_World.x + v_World.y * v_World.y + timer * 2) % 72)/64.0;
+        //if(int((v_World.x + v_World.y) * sin(timer) + timer) % 32 <= 16)
+        //  FragColor.r *= .8;
+      }
+      else
+      {
+        FragColor.r += real_color[3] * TexColor.g * tR;  
+        FragColor.g += real_color[4] * TexColor.g * tG; 
+        FragColor.b += real_color[5] * TexColor.g * tB; 
+      }
+  }
+  else if(TexColor.b == total)//If this pixel has all blue value
+  {
+      FragColor.r += real_color[6] * TexColor.b * tR;  
+      FragColor.g += real_color[7] * TexColor.b * tG; 
+      FragColor.b += real_color[8] * TexColor.b * tB; 
+  }
+  else //if Its a mix of colors, just use the colormap as the display color
+  {
+      FragColor.r += TexColor.r * tR;  
+      FragColor.g += TexColor.g * tG; 
+      FragColor.b += TexColor.b * tB;
+  }
+  /**/
+  
+	//if(FragColor.a <= .05)//Gets rid of transparent pixels
+	//	discard;
+}

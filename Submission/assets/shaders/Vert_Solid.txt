@@ -1,0 +1,23 @@
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aColor;
+layout (location = 2) in vec2 aTexCoord;
+
+out vec3 v_Color;
+out vec2 v_TexCoord;
+
+uniform mat3 transform;
+uniform mat3 view;
+uniform mat3 projection;
+uniform float ured;
+uniform float ugreen;
+uniform float ublue;
+
+void main()
+{
+	vec3 v = projection * view * transform * aPos;
+	
+	gl_Position = vec4(v.x, v.y, 1, 1);
+
+	v_Color = vec3(1.0, 0.0, 1.0);
+}

@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 10:48-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: TrueType.cpp:297
+msgid "Play"
+msgstr "시작"
+
+#: TrueType.cpp:298
+msgid "Options"
+msgstr "옵션"
+
+#: TrueType.cpp:299
+msgid "Credits"
+msgstr "크레딧"
+
+#: TrueType.cpp:300
+msgid "Quit"
+msgstr "종료"
+
+msgid "Resume"
+msgstr "재개"
+
+msgid "Menu"
+msgstr "메뉴"
+
+msgid "How to Play"
+msgstr "게임방법"
+
+msgid "Master Volume"
+msgstr "마스터 볼륨"
+
+msgid "Music Volume"
+msgstr "음악 볼륨"
+
+msgid "SFX Volume"
+msgstr "음향 볼륨"
+
+msgid "Mute"
+msgstr "음소거"
+
+msgid "Fullscreen"
+msgstr "전체화면"
+
+msgid "On"
+msgstr "켜짐"
+
+msgid "Off"
+msgstr "꺼짐"
+
+msgid "Back"
+msgstr "뒤로가기"
+
+msgid "WASD to Move"
+msgstr "WASD로 이동"
+
+msgid "Make a loop"
+msgstr "한바퀴 돌기"
+
+msgid "Magenta: Turn  |  Cyan: Forward"
+msgstr "빨강: 회전  |  파랑: 직진"
+
+#Translation: Collect coins
+msgid "Collect the secret coins"
+msgstr "숨겨져있는 동전 수집"
+
+msgid "Are you sure?"
+msgstr "종료하시겠습니까?"
+
+msgid "Yes"
+msgstr "네"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "Korean"
+msgstr "한국어"

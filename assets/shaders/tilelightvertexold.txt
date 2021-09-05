@@ -1,0 +1,84 @@
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aColor;
+layout (location = 2) in vec2 aTexCoord;
+
+out vec3 v_Color;
+out vec2 v_TexCoord;
+
+//Animation Uniforms
+uniform int aIndex;
+uniform int aColums;
+uniform int aRows;
+
+//Matrix Uniforms
+uniform mat3 transform;
+uniform mat3 view;
+uniform mat3 projection;
+
+//Light Variables
+int MAXLIGHTS = 10;
+out vec3 lightDistances[10];
+uniform int validLights;
+
+uniform float LX[MAXLIGHTS];
+uniform float LY[MAXLIGHTS];
+uniform float LZ[MAXLIGHTS];
+
+uniform int isWall;
+uniform float TileZ;
+
+void main()
+{
+	int animationIndex = aIndex; //Starts at lower left corner of sheet and goes row major
+	int cols = aColums;
+	int rows = aRows;
+        
+	vec3 v = transform * aPos;
+	//v Is in world position
+  
+  //Set world position for tiles
+  vec3 World;
+  if(isWall != 0.0)
+    World = vec3(v.x, v.y + TileZ, TileZ - v.y);
+  else
+    World = vec3(v.x, v.y + TileZ, TileZ);
+  
+  int count = MAXLIGHTS;
+  if(validLights < count)
+    count = validLights;
+  //Loop through the valid lights
+  for(int i = 0; i < count; i++)
+  {
+    float xDiff = (LX[i] - World.y)
+    xDiff *= xDiff;
+    float yDiff = (LY[i] - World.y)
+    yDiff *= yDiff;
+    float zDiff = (LZ[i] - World.z)
+    zDiff *= zDiff;
+    lightDistances[i] = vec3(xDiff, yDiff, zDiff);
+  }
+  
+  v = projection * view * v;
+  
+	gl_Position = vec4(v.x, v.y, 1, 1);
+
+	vec2 TexCoord = aTexCoord;
+
+	int rowIndex = rows - (animationIndex / cols) - 1; //from the bottom
+	int colIndex = (animationIndex % cols);
+
+	float xOffset = (1.0/cols) * colIndex; //Width of one frame * rowIndex
+	float yOffset = (1.0/rows) * rowIndex; //Height of one frame * colIndex
+
+	//Scale down the size of all TexCoords to be the size of one frame
+	TexCoord.x /= cols;
+	TexCoord.y /= rows;
+
+	//Shift all TexCoords by the offset;
+	TexCoord.x += xOffset;
+	TexCoord.y += yOffset;
+
+	//v_TexCoord = vec2(TexCoord.x, TexCoord.y);
+	v_TexCoord = TexCoord;
+}

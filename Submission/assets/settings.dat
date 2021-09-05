@@ -1,0 +1,16 @@
+debug = false
+liveupdate = false
+mastervolume = 100
+musicvolume = 40
+sfxvolume = 30
+mastermuted = false
+musicmuted = false
+sfxmuted = false
+windowed = false
+colorstandard = true
+colorbg = false
+colorry = false
+colorrg = false
+colormono = false
+graphicdebug = false
+camfollowing = true

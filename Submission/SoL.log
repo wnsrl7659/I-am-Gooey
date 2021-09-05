@@ -1,0 +1,201 @@
+﻿  Window.cpp
+d:\sandbox\git\radiant\sol\src\system\engine.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\trace\trace.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\graphics\render.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\graphics\mesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\animation\animation.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\graphics\debugdraw.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\component\collider.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\message.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\message.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\puzzles\newpuzzle.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\gameobject\gameobject.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\component\pscript.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\messaging.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\messagehandler.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\message.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\vfx\lightmanager.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\component\multiemitter.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\vfx\particle.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\vfx\wave.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\spaces\spaces.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\timer\timer.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\system\timermanager.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\settings\settings.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\messaging\message.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\audio\audio.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+d:\sandbox\git\radiant\sol\src\system\countdowntimer.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  3 of 8918 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SoL.vcxproj -> D:\sandbox\git\radiant\SoL\Submission\iag.exe
+  D:\sandbox\git\radiant\SoL\dependancies\fmod.dll
+  D:\sandbox\git\radiant\SoL\dependancies\fmodstudio.dll
+  D:\sandbox\git\radiant\SoL\dependancies\freetype.dll
+  3개 파일이 복사되었습니다.
+  D:\sandbox\git\radiant\SoL\assets\Overpass-Regular.ttf
+  D:\sandbox\git\radiant\SoL\assets\UncialAntiqua-Regular.ttf
+  D:\sandbox\git\radiant\SoL\assets\NotoSansJP-Regular.otf
+  D:\sandbox\git\radiant\SoL\assets\NotoSansJP-Regular.ttf
+  D:\sandbox\git\radiant\SoL\assets\NotoSansKR-Regular.otf
+  D:\sandbox\git\radiant\SoL\assets\NotoSansKR-Regular.ttf
+  D:\sandbox\git\radiant\SoL\assets\OpenSans-Regular.ttf
+  D:\sandbox\git\radiant\SoL\assets\settings.dat
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\GUIDs.txt
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Credits.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Level_1.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Level_2.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Level_3.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\General.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Level_4.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Main_Menu.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Stingers.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\UI.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\FinalScene.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Master Bank.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Master Bank.strings.bank
+  D:\sandbox\git\radiant\SoL\assets\Radiant_FMOD\Desktop\Player.bank
+  D:\sandbox\git\radiant\SoL\assets\emitters\NewEmitter.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\a.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\b.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\boom.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\beacon.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\slime.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\bigthonk.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\dust.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\dust2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\twinkle.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk3.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk4.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk5.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\lk6.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\sky.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\waves.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\waves2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\BowlAhead.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\Bowlside.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\flame1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\flame4.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\flame5.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\leaves.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\TT_walkthroughpart.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\TTdust1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\TTdust2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\TTstones.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\Transition1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\Transition2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\beacon1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\beacon2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\bf1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\bf2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\tileglow.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\LevelFail.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\PuzzleAmb.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\PuzzleBurst.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\Selector.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\SelectorMirowed.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\BigBowl1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\flame2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\flame3.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\sun1.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\sun2.json
+  D:\sandbox\git\radiant\SoL\assets\emitters\sun3.json
+  D:\sandbox\git\radiant\SoL\assets\objects\Stub.json
+  D:\sandbox\git\radiant\SoL\assets\objects\background1.json
+  D:\sandbox\git\radiant\SoL\assets\objects\background2.json
+  D:\sandbox\git\radiant\SoL\assets\objects\grass1.json
+  D:\sandbox\git\radiant\SoL\assets\objects\grass2.json
+  D:\sandbox\git\radiant\SoL\assets\objects\pause.json
+  D:\sandbox\git\radiant\SoL\assets\objects\player.json
+  D:\sandbox\git\radiant\SoL\assets\objects\playerLastSave.json
+  D:\sandbox\git\radiant\SoL\assets\objects\trees1.json
+  D:\sandbox\git\radiant\SoL\assets\objects\trees2.json
+  D:\sandbox\git\radiant\SoL\assets\objects\defaultPlayer.json
+  D:\sandbox\git\radiant\SoL\assets\resources\SpriteFrame.png
+  D:\sandbox\git\radiant\SoL\assets\resources\fmodcredits.png
+  D:\sandbox\git\radiant\SoL\assets\resources\numberfont.png
+  D:\sandbox\git\radiant\SoL\assets\resources\pause.png
+  D:\sandbox\git\radiant\SoL\assets\resources\pause2.png
+  D:\sandbox\git\radiant\SoL\assets\resources\splash.png
+  D:\sandbox\git\radiant\SoL\assets\resources\staff_UI.png
+  D:\sandbox\git\radiant\SoL\assets\resources\winScreen.png
+  D:\sandbox\git\radiant\SoL\assets\resources\title.png
+  D:\sandbox\git\radiant\SoL\assets\resources\credits.png
+  D:\sandbox\git\radiant\SoL\assets\resources\options.png
+  D:\sandbox\git\radiant\SoL\assets\resources\play.png
+  D:\sandbox\git\radiant\SoL\assets\resources\quit.png
+  D:\sandbox\git\radiant\SoL\assets\resources\menu.png
+  D:\sandbox\git\radiant\SoL\assets\resources\resume.png
+  D:\sandbox\git\radiant\SoL\assets\resources\MenuBackground.png
+  D:\sandbox\git\radiant\SoL\assets\resources\teamcredits.png
+  D:\sandbox\git\radiant\SoL\assets\resources\LeftRightFade.png
+  D:\sandbox\git\radiant\SoL\assets\resources\Radiant.png
+  D:\sandbox\git\radiant\SoL\assets\resources\Tower.png
+  D:\sandbox\git\radiant\SoL\assets\resources\TreesBG.png
+  D:\sandbox\git\radiant\SoL\assets\resources\TreesFG.png
+  D:\sandbox\git\radiant\SoL\assets\resources\fade.png
+  D:\sandbox\git\radiant\SoL\assets\resources\groundlolxd.png
+  D:\sandbox\git\radiant\SoL\assets\resources\icon.ico
+  D:\sandbox\git\radiant\SoL\assets\resources\DraftMapv1.png
+  D:\sandbox\git\radiant\SoL\assets\resources\box.png
+  D:\sandbox\git\radiant\SoL\assets\resources\enginesplash.PNG
+  D:\sandbox\git\radiant\SoL\assets\resources\execcredits.PNG
+  D:\sandbox\git\radiant\SoL\assets\resources\instructorcredits.PNG
+  D:\sandbox\git\radiant\SoL\assets\resources\licensecredits.PNG
+  D:\sandbox\git\radiant\SoL\assets\resources\select.png
+  D:\sandbox\git\radiant\SoL\assets\resources\soulstare.png
+  D:\sandbox\git\radiant\SoL\assets\resources\specialthanks.PNG
+  D:\sandbox\git\radiant\SoL\assets\resources\tile_normals.png
+  D:\sandbox\git\radiant\SoL\assets\resources\tile_set.png
+  D:\sandbox\git\radiant\SoL\assets\resources\titlecredits.png
+  D:\sandbox\git\radiant\SoL\assets\resources\tutorial_bowl.png
+  D:\sandbox\git\radiant\SoL\assets\resources\tutorial_hint.png
+  D:\sandbox\git\radiant\SoL\assets\resources\tutorial_loop.png
+  D:\sandbox\git\radiant\SoL\assets\resources\tutorial_move.png
+  D:\sandbox\git\radiant\SoL\assets\resources\WinBackground.png
+  D:\sandbox\git\radiant\SoL\assets\resources\WinTower.png
+  D:\sandbox\git\radiant\SoL\assets\resources\path.txt
+  D:\sandbox\git\radiant\SoL\assets\resources\selectedbox.png
+  D:\sandbox\git\radiant\SoL\assets\resources\OliveSpriteSheet.png
+  D:\sandbox\git\radiant\SoL\assets\resources\particle.png
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_Col.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Reference.shader
+  D:\sandbox\git\radiant\SoL\assets\shaders\Vert_Animated.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Vert_Default.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Vert_Solid.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\frag.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\tilelightvertexold.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Vert_TileLight.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_Font.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Vert_Font.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_Tex.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_TexColBlend.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_Sky.txt
+  D:\sandbox\git\radiant\SoL\assets\shaders\Frag_TileLight.txt
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Four.txt
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_One.txt
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Three.txt
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Two.txt
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Four.json
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_One.json
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Three.json
+  D:\sandbox\git\radiant\SoL\assets\rooms\Level\Level_Two.json
+  149개 파일이 복사되었습니다.
+  D:\sandbox\git\radiant\SoL\localization\en_US\LC_MESSAGES\en.mo
+  D:\sandbox\git\radiant\SoL\localization\en_US\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\ja_JP\LC_MESSAGES\ja.mo
+  D:\sandbox\git\radiant\SoL\localization\ja_JP\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\ko_KR\LC_MESSAGES\ko.mo
+  D:\sandbox\git\radiant\SoL\localization\ko_KR\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\de_DE\LC_MESSAGES\de.mo
+  D:\sandbox\git\radiant\SoL\localization\de_DE\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\es_ES\LC_MESSAGES\es.mo
+  D:\sandbox\git\radiant\SoL\localization\es_ES\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\ru_RU\LC_MESSAGES\messages.po
+  D:\sandbox\git\radiant\SoL\localization\ru_RU\LC_MESSAGES\ru.mo
+  12개 파일이 복사되었습니다.

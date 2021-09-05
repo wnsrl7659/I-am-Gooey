@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Submission|Win32">
+      <Configuration>Submission</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Submission|x64">
+      <Configuration>Submission</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CD892C59-74CD-4465-96BA-FD9364EB8402}</ProjectGuid>
+    <RootNamespace>SoL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>iag</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Submission|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Submission|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|Win32'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|x64'">
+    <IncludePath>$(SolutionDir)src\;$(SolutionDir)external\SDL\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external/SDL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)external\boost_1_69_0;$(SolutionDir)external\FREETYPE\include;$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\FMOD;$(SolutionDir)external\rapidjson\include;$(SolutionDir)external\GLM;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\boost_1_69_0\bin.v2\libs\locale\build\msvc-14.1\debug\link-static\threading-multi;$(SolutionDir)external\FREETYPE\win32;$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)external\boost_1_69_0;$(SolutionDir)external\FREETYPE\include;$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\FMOD;$(SolutionDir)external\rapidjson\include;$(SolutionDir)external\GLM;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\boost_1_69_0\bin.v2\libs\program_options\build\msvc-14.1\release\link-static\threading-multi;$(SolutionDir)external\boost_1_69_0\bin.v2\libs\locale\build\msvc-14.1\release\link-static\threading-multi;$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(SolutionDir)external\FREETYPE\win32;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|Win32'">
+    <IncludePath>$(SolutionDir)external\FreeType\include;$(SolutionDir)external\boost_1_69_0;$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\FMOD;$(SolutionDir)external\rapidjson\include;C:\Users\whitr\Desktop\NewRadiant\radiant\SoL\external\IMGUI;$(SolutionDir)external\GLM;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\FREETYPE\win32;$(SolutionDir)external\boost_1_69_0\bin.v2\libs\locale\build\msvc-14.1\release\link-static\threading-multi;$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)external\rapidjson\include;$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\GLM;$(SolutionDir)external\FMOD;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\FMOD;$(SolutionDir)external\FREETYPE\include;$(SolutionDir)external\GLM;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Submission|x64'">
+    <IncludePath>$(SolutionDir)external\STBI;$(SolutionDir)external\GLEW\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)src;$(SolutionDir)external\IMGUI;$(SolutionDir)external\FMOD;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\GLEW\lib\Release\Win32;$(SolutionDir)external\GLFW\lib-vc2015;$(SolutionDir)external\FMOD;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\justi\radiant\radiant\SoL\external\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;SDL2.lib;SDL2main.lib;libboost_locale-vc141-mt-gd-x32-1_69.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\justi\radiant\radiant\SoL\external\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;freetype.lib;libboost_locale-vc141-mt-x32-1_69.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e
+xcopy "$(SolutionDir)localization\*" "$(SolutionDir)$(Configuration)\localization" /y /i /s /e</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Submission|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>NDEBUG;GLEW_STATIC;_SUBMISSION;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <StringPooling>false</StringPooling>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\justi\radiant\radiant\SoL\external\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;SDL2.lib;SDL2main.lib;libboost_locale-vc141-mt-x32-1_69.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e
+xcopy "$(SolutionDir)localization\*" "$(SolutionDir)$(Configuration)\localization" /y /i /s /e</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\justi\radiant\radiant\SoL\external\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Submission|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GLEW_STATIC;_SUBMISSION;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>fmod_vc.lib;fmodstudio_vc.lib;glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\justi\radiant\radiant\SoL\external\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)dependancies" "$(SolutionDir)$(Configuration)" /y /i
+xcopy "$(SolutionDir)assets\*" "$(SolutionDir)$(Configuration)\assets" /y /i /s /e</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\animation\animation.cpp" />
+    <ClCompile Include="src\audio\audio.cpp" />
+    <ClCompile Include="src\audio\audiomanager.cpp" />
+    <ClCompile Include="src\component\collfix.cpp" />
+    <ClCompile Include="src\component\controller.cpp" />
+    <ClCompile Include="src\component\Emitter.cpp" />
+    <ClCompile Include="src\component\map.cpp" />
+    <ClCompile Include="src\component\mousecollider.cpp" />
+    <ClCompile Include="src\component\MultiEmitter.cpp" />
+    <ClCompile Include="src\component\onewaycollider.cpp" />
+    <ClCompile Include="src\component\paralax.cpp" />
+    <ClCompile Include="src\component\button.cpp" />
+    <ClCompile Include="src\component\pscript.cpp" />
+    <ClCompile Include="src\component\script.cpp" />
+    <ClCompile Include="src\component\teleporter.cpp" />
+    <ClCompile Include="src\component\collider.cpp" />
+    <ClCompile Include="src\gameobject\GameObjectSerialize.cpp" />
+    <ClCompile Include="src\graphics\Camera.cpp" />
+    <ClCompile Include="src\graphics\DebugDraw.cpp" />
+    <ClCompile Include="src\graphics\DebugWindow.cpp" />
+    <ClCompile Include="src\graphics\Fade.cpp" />
+    <ClCompile Include="src\graphics\FontRender.cpp" />
+    <ClCompile Include="src\graphics\Mesh.cpp" />
+    <ClCompile Include="src\graphics\MeshManager.cpp" />
+    <ClCompile Include="src\graphics\Render.cpp" />
+    <ClCompile Include="src\graphics\Shader.cpp" />
+    <ClCompile Include="src\graphics\Sprite.cpp" />
+    <ClCompile Include="src\graphics\SpriteOrder.cpp" />
+    <ClCompile Include="src\graphics\TextureManager.cpp" />
+    <ClCompile Include="src\graphics\Tilemap.cpp" />
+    <ClCompile Include="src\graphics\TileParser.cpp" />
+    <ClCompile Include="src\IMGUI\imgui.cpp" />
+    <ClCompile Include="src\IMGUI\imgui_demo.cpp" />
+    <ClCompile Include="src\IMGUI\imgui_draw.cpp" />
+    <ClCompile Include="src\IMGUI\imgui_impl_glfw.cpp" />
+    <ClCompile Include="src\IMGUI\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="src\input\input.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\maps\layer.cpp" />
+    <ClCompile Include="src\maps\tile.cpp" />
+    <ClCompile Include="src\messaging\InputEvent.cpp" />
+    <ClCompile Include="src\messaging\message.cpp" />
+    <ClCompile Include="src\messaging\messaging.cpp" />
+    <ClCompile Include="src\physics\Matrix2D.cpp" />
+    <ClCompile Include="src\physics\Physics.cpp" />
+    <ClCompile Include="src\physics\Transform.cpp" />
+    <ClCompile Include="src\physics\Vector2D.cpp" />
+    <ClCompile Include="src\puzzles\newpuzzle_r.cpp" />
+    <ClCompile Include="src\settings\settings.cpp" />
+    <ClCompile Include="src\spaces\audiotestspace.cpp" />
+    <ClCompile Include="src\spaces\creditsspace.cpp" />
+    <ClCompile Include="src\spaces\digispace.cpp" />
+    <ClCompile Include="src\spaces\enginespace.cpp" />
+    <ClCompile Include="src\spaces\housespace.cpp" />
+    <ClCompile Include="src\spaces\howtoplay.cpp" />
+    <ClCompile Include="src\spaces\mainmenuspace.cpp" />
+    <ClCompile Include="src\spaces\mapspace.cpp" />
+    <ClCompile Include="src\spaces\optionspace.cpp" />
+    <ClCompile Include="src\spaces\pausespace.cpp" />
+    <ClCompile Include="src\spaces\playerspace.cpp" />
+    <ClCompile Include="src\spaces\poptionspace.cpp" />
+    <ClCompile Include="src\spaces\radiantspace.cpp" />
+    <ClCompile Include="src\spaces\spacemanager.cpp" />
+    <ClCompile Include="src\spaces\spaces.cpp" />
+    <ClCompile Include="src\spaces\splashspace.cpp" />
+    <ClCompile Include="src\spaces\uispace.cpp" />
+    <ClCompile Include="src\spaces\winspace.cpp" />
+    <ClCompile Include="src\system\Engine.cpp" />
+    <ClCompile Include="src\system\FileReading.cpp" />
+    <ClCompile Include="src\system\heatmap.cpp" />
+    <ClCompile Include="src\system\localize.cpp" />
+    <ClCompile Include="src\system\sysinfo.cpp" />
+    <ClCompile Include="src\system\timermanager.cpp" />
+    <ClCompile Include="src\system\TrueType.cpp" />
+    <ClCompile Include="src\system\Window.cpp" />
+    <ClCompile Include="src\timer\timer.cpp" />
+    <ClCompile Include="src\trace\trace.cpp" />
+    <ClCompile Include="src\utils\autoplay.cpp" />
+    <ClCompile Include="src\utils\playback.cpp" />
+    <ClCompile Include="src\utils\utils.cpp" />
+    <ClCompile Include="src\vfx\color.cpp" />
+    <ClCompile Include="src\vfx\LightManager.cpp" />
+    <ClCompile Include="src\vfx\LightReciever.cpp" />
+    <ClCompile Include="src\vfx\LightSource.cpp" />
+    <ClCompile Include="src\vfx\particle.cpp" />
+    <ClCompile Include="src\vfx\TileDictionary.cpp" />
+    <ClCompile Include="src\vfx\Wave.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\animation\animation.h" />
+    <ClInclude Include="src\audio\audio.h" />
+    <ClInclude Include="src\audio\audiomanager.h" />
+    <ClInclude Include="src\component\collfix.h" />
+    <ClInclude Include="src\component\component.h" />
+    <ClInclude Include="src\component\controller.h" />
+    <ClInclude Include="src\component\emitter.h" />
+    <ClInclude Include="src\component\map.h" />
+    <ClInclude Include="src\component\mousecollider.h" />
+    <ClInclude Include="src\component\MultiEmitter.h" />
+    <ClInclude Include="src\component\onewaycollider.h" />
+    <ClInclude Include="src\component\paralax.h" />
+    <ClInclude Include="src\component\button.h" />
+    <ClInclude Include="src\component\pscript.h" />
+    <ClInclude Include="src\component\teleporter.h" />
+    <ClInclude Include="src\component\collider.h" />
+    <ClInclude Include="src\gameobject\gameobject.h" />
+    <ClInclude Include="src\gameobject\GameObjectSerialize.h" />
+    <ClInclude Include="src\graphics\Camera.h" />
+    <ClInclude Include="src\graphics\DebugDraw.h" />
+    <ClInclude Include="src\graphics\DebugWindow.h" />
+    <ClInclude Include="src\graphics\Fade.h" />
+    <ClInclude Include="src\graphics\FontRender.h" />
+    <ClInclude Include="src\graphics\Mesh.h" />
+    <ClInclude Include="src\graphics\MeshManager.h" />
+    <ClInclude Include="src\graphics\Render.h" />
+    <ClInclude Include="src\graphics\Shader.h" />
+    <ClInclude Include="src\graphics\Sprite.h" />
+    <ClInclude Include="src\graphics\SpriteOrder.h" />
+    <ClInclude Include="src\graphics\TextureManager.h" />
+    <ClInclude Include="src\graphics\Tilemap.h" />
+    <ClInclude Include="src\graphics\TileParser.h" />
+    <ClInclude Include="src\input\input.h" />
+    <ClInclude Include="src\IMGUI\imconfig.h" />
+    <ClInclude Include="src\IMGUI\imgui.h" />
+    <ClInclude Include="src\IMGUI\imgui_impl_glfw.h" />
+    <ClInclude Include="src\IMGUI\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\IMGUI\imgui_internal.h" />
+    <ClInclude Include="src\IMGUI\imstb_rectpack.h" />
+    <ClInclude Include="src\IMGUI\imstb_textedit.h" />
+    <ClInclude Include="src\IMGUI\imstb_truetype.h" />
+    <ClInclude Include="src\maps\layer.h" />
+    <ClInclude Include="src\maps\tile.h" />
+    <ClInclude Include="src\messaging\ControllerEvent.h" />
+    <ClInclude Include="src\messaging\InputEvent.h" />
+    <ClInclude Include="src\messaging\message.h" />
+    <ClInclude Include="src\messaging\messagehandler.h" />
+    <ClInclude Include="src\messaging\messaging.h" />
+    <ClInclude Include="src\physics\Matrix2D.h" />
+    <ClInclude Include="src\physics\Physics.h" />
+    <ClInclude Include="src\physics\Transform.h" />
+    <ClInclude Include="src\physics\Vector2D.h" />
+    <ClInclude Include="src\puzzles\newpuzzle.h" />
+    <ClInclude Include="src\settings\settings.h" />
+    <ClInclude Include="src\spaces\spacemanager.h" />
+    <ClInclude Include="src\spaces\spaces.h" />
+    <ClInclude Include="src\stub.h" />
+    <ClInclude Include="src\system\common_defines.h" />
+    <ClInclude Include="src\system\countdowntimer.h" />
+    <ClInclude Include="src\system\Engine.h" />
+    <ClInclude Include="src\system\exceptions.h" />
+    <ClInclude Include="src\system\FileReading.h" />
+    <ClInclude Include="src\system\heatmap.h" />
+    <ClInclude Include="src\system\localize.h" />
+    <ClInclude Include="src\system\sysinfo.h" />
+    <ClInclude Include="src\system\timermanager.h" />
+    <ClInclude Include="src\system\TrueType.h" />
+    <ClInclude Include="src\system\Utility.h" />
+    <ClInclude Include="src\system\Window.h" />
+    <ClInclude Include="src\timer\timer.h" />
+    <ClInclude Include="src\trace\trace.h" />
+    <ClInclude Include="src\utils\autoplay.h" />
+    <ClInclude Include="src\utils\playback.h" />
+    <ClInclude Include="src\utils\utils.h" />
+    <ClInclude Include="src\vfx\color.h" />
+    <ClInclude Include="src\vfx\LightManager.h" />
+    <ClInclude Include="src\vfx\LightReciever.h" />
+    <ClInclude Include="src\vfx\LightSource.h" />
+    <ClInclude Include="src\vfx\particle.h" />
+    <ClInclude Include="src\vfx\TileDictionary.h" />
+    <ClInclude Include="src\vfx\Wave.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\rooms\Level\Level_Four.txt" />
+    <Text Include="assets\rooms\Level\Level_One.txt" />
+    <Text Include="assets\rooms\Level\Level_Three.txt" />
+    <Text Include="assets\rooms\Level\Level_Two.txt" />
+    <Text Include="assets\shaders\frag.txt" />
+    <Text Include="assets\shaders\Frag_Col.txt" />
+    <Text Include="assets\shaders\Frag_Tex.txt" />
+    <Text Include="assets\shaders\Frag_TexColBlend.txt" />
+    <Text Include="assets\shaders\vert.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\objects\background1.json" />
+    <None Include="assets\objects\background2.json" />
+    <None Include="assets\objects\defaultPlayer.json" />
+    <None Include="assets\objects\empty0.json" />
+    <None Include="assets\objects\grass1.json" />
+    <None Include="assets\objects\grass2.json" />
+    <None Include="assets\objects\player.json" />
+    <None Include="assets\objects\playerLastSave.json" />
+    <None Include="assets\objects\Stub.json" />
+    <None Include="assets\objects\trees1.json" />
+    <None Include="assets\objects\trees2.json" />
+    <None Include="assets\rooms\Level\LevelOne.json" />
+    <None Include="assets\rooms\Level\Level_Four.json" />
+    <None Include="assets\rooms\Level\Level_One.json" />
+    <None Include="assets\rooms\Level\Level_Three.json" />
+    <None Include="assets\rooms\Level\Level_Two.json" />
+    <None Include="assets\settings.dat" />
+    <None Include="localization\de_DE\LC_MESSAGES\messages.po" />
+    <None Include="localization\en_US\LC_MESSAGES\messages.po" />
+    <None Include="localization\es_ES\LC_MESSAGES\messages.po" />
+    <None Include="localization\ja_JP\LC_MESSAGES\messages.po" />
+    <None Include="localization\ko_KR\LC_MESSAGES\messages.po" />
+    <None Include="localization\ru_RU\LC_MESSAGES\messages.po" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SoL1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

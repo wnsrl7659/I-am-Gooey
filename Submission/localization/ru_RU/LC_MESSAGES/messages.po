@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 10:48-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Play"
+msgstr "Играть"
+
+msgid "Options"
+msgstr "Настройки"
+
+msgid "Credits"
+msgstr "Разработчики"
+
+msgid "Quit"
+msgstr "Выйти"
+
+#Translation: Instructions
+msgid "How to Play"
+msgstr "Как играть"
+
+msgid "Master Volume"
+msgstr "Общая громкость"
+
+msgid "Music Volume"
+msgstr "Громкость музыки"
+
+msgid "SFX Volume"
+msgstr "Громкость эффектов"
+
+msgid "Mute"
+msgstr "Заглушить"
+
+msgid "Fullscreen"
+msgstr "Полный экран"
+
+msgid "On"
+msgstr "Вкл"
+
+msgid "Off"
+msgstr "Выкл"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "WASD to Move"
+msgstr "WASD перемещение"
+
+msgid "Make a loop"
+msgstr "Завершите цикл"
+
+msgid "Magenta: Turn  |  Cyan: Forward"
+msgstr "Голубой: Поворот | Розовый: Прямо"
+
+#Translation: Collect coins
+msgid "Collect the secret coins"
+msgstr "Собирайте монетки"
+
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Russian"
+msgstr "Русский"

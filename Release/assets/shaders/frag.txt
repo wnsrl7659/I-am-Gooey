@@ -1,0 +1,25 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec3 v_Color;
+in vec2 v_TexCoord;
+
+// texture sampler
+uniform sampler2D texture1;
+uniform int stupidNumber;
+
+void main()
+{
+/*
+	ivec2 off = ivec2(stupidNumber, stupidNumber);
+	FragColor = textureOffset(texture1, v_TexCoord/2, off) * vec4(v_Color, 1.0);
+
+	//
+	//FragColor = vec4(v_Color, .5);
+/**/
+
+	FragColor = texture(texture1, v_TexCoord) * vec4(v_Color, 1.0);
+	if(FragColor.a == 0)//Gets rid of transparent pixels
+		discard;
+
+}

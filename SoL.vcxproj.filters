@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{ae629c14-5085-44b3-be62-bf8d1bb0f3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messaging">
+      <UniqueIdentifier>{a1de2434-1ec4-4efc-8fb3-e809ede0b1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Objects">
+      <UniqueIdentifier>{29c4a5c2-71e2-4b3a-8e2e-cbbdbb75d962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{5fed61ab-0664-46fb-ae12-bd5b7634eb97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{06666022-c6be-42e6-8517-5f6d48ae0562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{f05a3f30-dcab-4bbb-93f5-9f6c85516b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{aaaa13e6-37de-4db7-b3a3-8ba06b313ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{103a29f4-50fb-4c67-9d04-3b09ea237446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Trace">
+      <UniqueIdentifier>{8fe8fa9c-8576-47f4-87de-da4cc2f54cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Maps">
+      <UniqueIdentifier>{f86b70b4-8b2f-4abe-96a0-2359667e4339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{7a30d86b-2071-4e68-892f-6f65f02874a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IMGUI">
+      <UniqueIdentifier>{5ac29370-80ee-43c0-913d-151512a5b6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{4ea7afe1-2772-49f9-9cae-bc970c1a8924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{c480cded-c4bc-4a94-9421-abda30edd8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Objects">
+      <UniqueIdentifier>{4fe5d678-c6ea-49d4-9e32-1cb19b925c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Puzzles">
+      <UniqueIdentifier>{52fba7ea-418e-4d4e-ad9f-b029ddf42a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Spaces">
+      <UniqueIdentifier>{aa95049b-7f1f-4a73-9d4f-c41de9f557c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VFX">
+      <UniqueIdentifier>{af1ca314-d05a-46e7-a28c-e11506252702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{011b0105-0da5-40c6-934c-ce9f42760004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Levels">
+      <UniqueIdentifier>{149d99df-86d3-424a-9329-4e47149e270a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Levels\JSON">
+      <UniqueIdentifier>{7b686648-3529-4407-92e2-1a5029fdd233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Levels\Text">
+      <UniqueIdentifier>{2008346a-eec0-48f6-9cd9-5e4a34d493ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations">
+      <UniqueIdentifier>{b730991e-7073-409f-b525-9c9765ded962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\de_DE">
+      <UniqueIdentifier>{40639158-cedd-4dee-8d52-03ea91c6a00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\en_US">
+      <UniqueIdentifier>{41de3a39-690e-46c7-bc9b-7bee78787a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\es_ES">
+      <UniqueIdentifier>{8ca8db2d-cb9d-498f-8d7b-f6a8f98d63b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\ja_JP">
+      <UniqueIdentifier>{33cc626f-5f0f-43fc-82b1-60abb74f837f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\ko_KR">
+      <UniqueIdentifier>{85f3b945-9c00-425f-aba5-afcddced6ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Translations\ru_RU">
+      <UniqueIdentifier>{2da34758-b623-4b31-a203-d9f510e8b7d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\timer\timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\audio.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\audiomanager.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messaging\InputEvent.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messaging\message.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messaging\messaging.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\input.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\animation\animation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Render.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Shader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\spacemanager.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\spaces.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\Engine.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\Window.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Camera.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Tilemap.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\FileReading.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\controller.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\audiotestspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\settings\settings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trace\trace.cpp">
+      <Filter>Source Files\Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\TextureManager.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\playerspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\mapspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maps\tile.cpp">
+      <Filter>Source Files\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maps\layer.cpp">
+      <Filter>Source Files\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\map.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\housespace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\MeshManager.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameobject\GameObjectSerialize.cpp">
+      <Filter>Source Files\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\Transform.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\Matrix2D.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\Vector2D.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui_demo.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui_draw.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui_impl_glfw.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IMGUI\imgui_widgets.cpp">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\DebugWindow.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\collfix.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\mainmenuspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\paralax.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\teleporter.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\timermanager.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\Physics.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\uispace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\collider.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\pausespace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\Emitter.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\particle.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\button.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\Wave.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\DebugDraw.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\color.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\creditsspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\onewaycollider.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\splashspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\script.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\winspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\sysinfo.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Mesh.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\TileParser.cpp">
+      <Filter>Source Files\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\heatmap.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\playback.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\autoplay.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\TileDictionary.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\TrueType.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\localize.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\LightManager.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\LightReciever.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vfx\LightSource.cpp">
+      <Filter>Source Files\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\FontRender.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\SpriteOrder.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\MultiEmitter.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Sprite.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\Fade.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\mousecollider.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\digispace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\radiantspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\howtoplay.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\enginespace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\pscript.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\poptionspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spaces\optionspace.cpp">
+      <Filter>Source Files\Spaces</Filter>
+    </ClCompile>
+    <ClCompile Include="src\puzzles\newpuzzle_r.cpp">
+      <Filter>Source Files\Puzzles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\audio\audio.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\audiomanager.h">
+      <Filter>Source Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messaging\InputEvent.h">
+      <Filter>Source Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messaging\message.h">
+      <Filter>Source Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messaging\messagehandler.h">
+      <Filter>Source Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messaging\messaging.h">
+      <Filter>Source Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameobject\gameobject.h">
+      <Filter>Source Files\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\input.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\animation\animation.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Mesh.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Render.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Shader.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\component.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\timer\timer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\spaces\spacemanager.h">
+      <Filter>Source Files\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\spaces\spaces.h">
+      <Filter>Source Files\Spaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\Engine.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\Window.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Camera.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Tilemap.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\FileReading.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\controller.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messaging\ControllerEvent.h">
+      <Filter>Source Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\settings\settings.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trace\trace.h">
+      <Filter>Source Files\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\TextureManager.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maps\tile.h">
+      <Filter>Source Files\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maps\layer.h">
+      <Filter>Source Files\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\map.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\MeshManager.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameobject\GameObjectSerialize.h">
+      <Filter>Source Files\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\Transform.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\Matrix2D.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\Vector2D.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imconfig.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imgui.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imgui_impl_glfw.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imgui_impl_opengl3.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imgui_internal.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imstb_rectpack.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imstb_textedit.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMGUI\imstb_truetype.h">
+      <Filter>Source Files\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\DebugWindow.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\collfix.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\paralax.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\teleporter.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\countdowntimer.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\timermanager.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\physics\Physics.h">
+      <Filter>Source Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\collider.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\emitter.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\particle.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\button.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\Wave.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\DebugDraw.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\color.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\onewaycollider.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\common_defines.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\sysinfo.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\exceptions.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stub.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\TileParser.h">
+      <Filter>Source Files\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\heatmap.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\playback.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\utils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\autoplay.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\TileDictionary.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\TrueType.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\puzzles\newpuzzle.h">
+      <Filter>Source Files\Puzzles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\localize.h">
+      <Filter>Source Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\LightManager.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\LightReciever.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vfx\LightSource.h">
+      <Filter>Source Files\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\FontRender.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\SpriteOrder.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\MultiEmitter.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Sprite.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\Fade.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\mousecollider.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\pscript.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\shaders\frag.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\shaders\vert.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\shaders\Frag_Col.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\shaders\Frag_Tex.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\shaders\Frag_TexColBlend.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="assets\rooms\Level\Level_Four.txt">
+      <Filter>Resource Files\Levels\Text</Filter>
+    </Text>
+    <Text Include="assets\rooms\Level\Level_One.txt">
+      <Filter>Resource Files\Levels\Text</Filter>
+    </Text>
+    <Text Include="assets\rooms\Level\Level_Three.txt">
+      <Filter>Resource Files\Levels\Text</Filter>
+    </Text>
+    <Text Include="assets\rooms\Level\Level_Two.txt">
+      <Filter>Resource Files\Levels\Text</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\settings.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\rooms\Level\LevelOne.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\objects\background1.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\background2.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\defaultPlayer.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\empty0.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\grass1.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\grass2.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\player.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\playerLastSave.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\Stub.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\trees1.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\objects\trees2.json">
+      <Filter>Resource Files\Objects</Filter>
+    </None>
+    <None Include="assets\rooms\Level\Level_Four.json">
+      <Filter>Resource Files\Levels\JSON</Filter>
+    </None>
+    <None Include="assets\rooms\Level\Level_Three.json">
+      <Filter>Resource Files\Levels\JSON</Filter>
+    </None>
+    <None Include="assets\rooms\Level\Level_Two.json">
+      <Filter>Resource Files\Levels\JSON</Filter>
+    </None>
+    <None Include="assets\rooms\Level\Level_One.json">
+      <Filter>Resource Files\Levels\JSON</Filter>
+    </None>
+    <None Include="localization\de_DE\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\de_DE</Filter>
+    </None>
+    <None Include="localization\en_US\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\en_US</Filter>
+    </None>
+    <None Include="localization\es_ES\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\es_ES</Filter>
+    </None>
+    <None Include="localization\ja_JP\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\ja_JP</Filter>
+    </None>
+    <None Include="localization\ko_KR\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\ko_KR</Filter>
+    </None>
+    <None Include="localization\ru_RU\LC_MESSAGES\messages.po">
+      <Filter>Resource Files\Translations\ru_RU</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SoL1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

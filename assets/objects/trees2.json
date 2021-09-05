@@ -1,0 +1,39 @@
+{
+    "Game Object Name": "trees2",
+    "Sprite": {
+        "Shader": 1,
+        "Texture": 3,
+        "xpos": 0.0,
+        "ypos": 0.0,
+        "xsize": 0.0,
+        "ysize": 0.0,
+        "rot": 0.0
+    },
+    "Transform": {
+        "Translation": {
+            "X": -3336.0,
+            "Y": 0.0
+        },
+        "Scale": {
+            "XScale": 2781.0,
+            "YScale": 1186.0
+        },
+        "Rotation": 0.0
+    },
+    "Paralax": {
+        "Speed": 1.5
+    },
+    "Teleporter": {
+        "Trigger": {
+            "triggerX": 2222.0,
+            "triggerY": 0.0
+        },
+        "Reset": {
+            "resetX": -3330.0,
+            "resetY": 0.0
+        },
+        "LessThan": false,
+        "xMatters": true,
+        "yMatters": false
+    }
+}

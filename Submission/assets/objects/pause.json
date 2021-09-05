@@ -1,0 +1,34 @@
+{
+    "Game Object Name": "Pause",
+    "Sprite": {
+        "Shader": 0,
+        "Texture": 3,
+        "xpos": 0.0,
+        "ypos": 0.0,
+        "xsize": 1.0,
+        "ysize": 1.0,
+        "rot": 0.0
+    },
+    "Animation": {
+        "RowCount": 1,
+        "ColCount": 1,
+        "AnimCount": 1,
+        "AnimLength": 2,
+        "Speed": 1.0,
+        "AnimationSequence": [
+            1,
+            -1
+        ]
+    },
+    "Transform": {
+        "Translation": {
+            "X": 1696.0,
+            "Y": -1920.0
+        },
+        "Scale": {
+            "XScale": 64.0,
+            "YScale": 128.0
+        },
+        "Rotation": 0.0
+    }
+}

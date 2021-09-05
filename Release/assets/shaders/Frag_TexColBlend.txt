@@ -1,0 +1,21 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec3 v_Color;
+in vec2 v_TexCoord;
+
+// texture sampler
+uniform sampler2D texture1;
+uniform float image_alpha;
+
+uniform vec3 uColor;
+
+void main()
+{
+	FragColor = texture(texture1, v_TexCoord) * vec4(uColor, 1.0);
+  FragColor.a *= image_alpha;
+  //if(FragColor.a <= .05)//Gets rid of transparent pixels
+	//	discard;
+  //lowp vec4 dest = gl_LastFragData[0];
+  //FragColor = vec4(dest.zyx, FragColor.a);
+}

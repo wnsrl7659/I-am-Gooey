@@ -1,0 +1,62 @@
+{
+    "AngleBase": 0.0,
+    "AngleRange": 0.0,
+    "xPosBase": 0.0,
+    "xPosRange": 1877.551025390625,
+    "yPosBase": -160.5500030517578,
+    "yPosRange": 0.0,
+    "forwardVelBase": 0.028999999165534974,
+    "forwardVelRange": 0.0,
+    "sideVelBase": 10.0,
+    "sideVelRange": 0.0,
+    "forwardAccBase": 0.028999999165534974,
+    "forwardAccRange": 0.0,
+    "sideAccBase": 0.7289999723434448,
+    "sideAccRange": 0.0,
+    "rotationalSpeedBase": 0.0,
+    "rotationalSpeedRange": 0.0,
+    "alphaSpeedBase": 0.0020000000949949028,
+    "alphaSpeedRange": 0.0,
+    "sizeXBase": 100.0,
+    "sizeXRange": 0.0,
+    "sizeYBase": 100.0,
+    "sizeYRange": 0.0,
+    "alphaBase": 0.14000000059604646,
+    "alphaRange": 0.0,
+    "colorRBase": 0.0,
+    "colorRRange": 0.0,
+    "colorGBase": 0.0,
+    "colorGRange": 0.0,
+    "colorBBase": 0.0,
+    "colorBRange": 0.0,
+    "isAnchored": false,
+    "isRadial": true,
+    "isBurst": false,
+    "isActive": true,
+    "doLoop": true,
+    "isColor": true,
+    "particleCount": 600,
+    "lifetime": 1.75,
+    "timeScalar": 1.0,
+    "waveAlpha": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    },
+    "waveForward": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    },
+    "waveSide": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    },
+    "waveSize": {
+        "center": 1.1139999628067017,
+        "height": 0.0,
+        "width": 5.0
+    },
+    "animIndex": 7
+}

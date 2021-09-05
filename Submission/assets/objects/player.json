@@ -1,0 +1,79 @@
+{
+    "Game Object Name": "player",
+    "Sprite": {
+        "Shader": 3,
+        "Texture": -1,
+        "xpos": 1755.0,
+        "ypos": -1920.0,
+        "xsize": 64.0,
+        "ysize": 64.0,
+        "rot": 0.0
+    },
+    "Animation": {
+        "RowCount": 8,
+        "ColCount": 2,
+        "AnimCount": 8,
+        "AnimLength": 5,
+        "Speed": 0.20000000298023225,
+        "AnimationSequence": [
+            6,
+            7,
+            6,
+            8,
+            -1,
+            0,
+            1,
+            0,
+            2,
+            -1,
+            3,
+            4,
+            3,
+            5,
+            -1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            3,
+            -1,
+            -1,
+            -1,
+            -1,
+            6,
+            -1,
+            -1,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            -1,
+            -1,
+            9,
+            10,
+            9,
+            11,
+            -1
+        ]
+    },
+    "PlayerController": {},
+    "Physics": {
+        "Velocity": {
+            "XVel": 160.0,
+            "YVel": 160.0
+        }
+    },
+    "Transform": {
+        "Translation": {
+            "X": 1696.0,
+            "Y": -1920.0
+        },
+        "Scale": {
+            "XScale": 64.0,
+            "YScale": 64.0
+        },
+        "Rotation": 0.0
+    }
+}

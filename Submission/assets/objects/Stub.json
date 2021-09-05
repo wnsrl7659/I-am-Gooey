@@ -1,0 +1,40 @@
+{
+    "Game Object Name": "EmptyStub, Not a Game Object",
+    "Sprite": {
+        "Shader": 3,
+        "Texture": -1,
+        "xpos": 0.0,
+        "ypos": 0.0,
+        "xsize": 1.0,
+        "ysize": 1.0,
+        "rot": 0.0
+    },
+    "Animation": {
+        "RowCount": 3,
+        "ColCount": 3,
+        "AnimCount": 1,
+        "AnimLength": 3,
+        "Speed": 1.0,
+        "AnimationSequence": [
+            -1,
+            -1,
+            -1,
+            -1
+        ]
+    },
+    "PlayerController": {},
+    "Physics": {
+        "Velocity": 1.0
+    },
+    "Transform": {
+        "Translation": {
+            "X": 0.0,
+            "Y": 0.0
+        },
+        "Scale": {
+            "XScale": 1.0,
+            "YScale": 1.0
+        },
+        "Rotation": 0.0
+    }
+}

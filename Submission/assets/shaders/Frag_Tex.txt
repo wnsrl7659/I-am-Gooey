@@ -1,0 +1,19 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec3 v_Color;
+in vec2 v_TexCoord;
+
+// texture sampler
+uniform sampler2D texture1;
+uniform float image_alpha;
+
+void main()
+{
+	FragColor = texture(texture1, v_TexCoord);
+  //FragColor = vec4(0.0,1.0,1.0,1.0);
+	FragColor.a *= image_alpha;
+	//if(FragColor.a <= .05)//Gets rid of transparent pixels
+	//	discard;
+
+}

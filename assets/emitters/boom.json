@@ -1,0 +1,52 @@
+{
+    "AngleBase": 0.0,
+    "AngleRange": 6.28000020980835,
+    "xPosBase": 0.0,
+    "xPosRange": 0.0,
+    "yPosBase": 0.0,
+    "yPosRange": 0.0,
+    "forwardVelBase": 5.0,
+    "forwardVelRange": 5.0,
+    "sideVelBase": 0.0,
+    "sideVelRange": 0.0,
+    "forwardAccBase": 0.0,
+    "forwardAccRange": 0.0,
+    "sideAccBase": 0.0,
+    "sideAccRange": 0.0,
+    "rotationalSpeedBase": 0.06700000166893006,
+    "rotationalSpeedRange": 0.0,
+    "alphaSpeedBase": 0.010999999940395356,
+    "alphaSpeedRange": 0.0,
+    "sizeXBase": 20.0,
+    "sizeXRange": 5.0,
+    "sizeYBase": 20.0,
+    "sizeYRange": 5.0,
+    "isAnchored": false,
+    "isRadial": true,
+    "isBurst": false,
+    "isActive": true,
+    "doLoop": false,
+    "particleCount": 120,
+    "lifetime": 1.0,
+    "timeScalar": 2.493000030517578,
+    "waveAlpha": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    },
+    "waveForward": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    },
+    "waveSide": {
+        "center": -1.0089999437332154,
+        "height": 1.0959999561309815,
+        "width": 0.21899999678134919
+    },
+    "waveSize": {
+        "center": 0.0,
+        "height": 0.0,
+        "width": 1.0
+    }
+}

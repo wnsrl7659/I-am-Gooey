@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 10:48-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: TrueType.cpp:297
+msgid "Play"
+msgstr "Spielen"
+
+#: TrueType.cpp:298
+msgid "Options"
+msgstr "Optionen"
+
+#: TrueType.cpp:299
+msgid "Credits"
+msgstr "Kredite"
+
+#: TrueType.cpp:300
+msgid "Quit"
+msgstr "Beenden"
+
+msgid "Resume"
+msgstr "Fortsetzen"
+
+msgid "Menu"
+msgstr "Speisekarte"
+
+#: Translation: Instructions
+msgid "How to Play"
+msgstr "Anleitung"
+
+msgid "Master Volume"
+msgstr "Hauptvolumen"
+
+msgid "Music Volume"
+msgstr "Musiklautstärke"
+
+msgid "SFX Volume"
+msgstr "SE-Lautstärke"
+
+msgid "Mute"
+msgstr "Stumm"
+
+msgid "Fullscreen"
+msgstr "Vollbildschirm"
+
+msgid "On"
+msgstr "Auf"
+
+msgid "Off"
+msgstr "Aus"
+
+msgid "Back"
+msgstr "Zurück"
+
+msgid "WASD to Move"
+msgstr "WASD bewegen"
+
+msgid "Make a loop"
+msgstr "Mach eine Schleife"
+
+msgid "Magenta: Turn  |  Cyan: Forward"
+msgstr "Magenta: Drehen  |  Cyan: Vorwaerts"
+
+#Translation: Collect coins
+msgid "Collect the secret coins"
+msgstr "Münzen sammeln"
+
+msgid "Are you sure?"
+msgstr "Bist du sicher?"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "German"
+msgstr "Deutsch"

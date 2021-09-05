@@ -1,0 +1,63 @@
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec3 aColor;
+layout (location = 2) in vec2 aTexCoord;
+
+out vec3 v_Color;
+out vec2 v_TexCoord;
+
+//Animation Uniforms
+uniform int aIndex;
+uniform int aColums;
+uniform int aRows;
+
+//Matrix Uniforms
+uniform mat3 transform;
+uniform mat3 view;
+uniform mat3 projection;
+
+//Light Uniforms
+out vec3 v_World;
+
+uniform int isWall;
+uniform float TileZ;
+uniform float TileY;
+
+void main()
+{
+	int animationIndex = aIndex; //Starts at lower left corner of sheet and goes row major
+	int cols = aColums;
+	int rows = aRows;
+  
+  vec3 v = transform * aPos;
+  
+  if(isWall != 0) //WALL
+    v_World = vec3(v.x, TileY - TileZ, TileZ + (v.y - TileY));
+  else //FLOOR
+    v_World = vec3(v.x, v.y + TileZ, TileZ);
+  
+  v = projection * view * v;
+	
+	gl_Position = vec4(v.x, v.y, 1.0, 1.0);
+
+	v_Color = aColor;
+
+	vec2 TexCoord = aTexCoord;
+
+	int rowIndex = rows - (animationIndex / cols) - 1; //from the bottom
+	int colIndex = (animationIndex % cols);
+
+	float xOffset = (1.0/cols) * colIndex; //Width of one frame * rowIndex
+	float yOffset = (1.0/rows) * rowIndex; //Height of one frame * colIndex
+
+	//Scale down the size of all TexCoords to be the size of one frame
+	TexCoord.x /= cols;
+	TexCoord.y /= rows;
+
+	//Shift all TexCoords by the offset;
+	TexCoord.x += xOffset;
+	TexCoord.y += yOffset;
+
+	//v_TexCoord = vec2(TexCoord.x, TexCoord.y);
+	v_TexCoord = TexCoord;
+}
